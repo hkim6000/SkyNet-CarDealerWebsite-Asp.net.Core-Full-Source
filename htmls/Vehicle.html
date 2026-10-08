@@ -1,0 +1,143 @@
+<div class="vh-site" data-page="Vehicle">
+<div class="vh-strip">
+    <div class="vh-strip-in">
+        <span class="vh-strip-l"><a href="tel:5550174400">Sales (555) 017-4400</a><a href="tel:5550174410">Service (555) 017-4410</a><a class="vh-strip-addr" href="Contact">4800 Crestline Parkway, Riverton</a></span>
+        <span class="vh-strip-r">{plhd_open}</span>
+    </div>
+</div>
+<header class="vh-head" id="vh-head">
+    <div class="vh-head-row">
+        <button type="button" class="vh-burger" aria-label="Menu" onclick="VehicleJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="vh-logo" href="Home"><svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><rect x="1" y="1" width="46" height="46" rx="10" fill="currentColor"/><path d="M9 31 L19 17 L25 25 L29 20 L39 31" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M9 36 H39" stroke="#D62B2B" stroke-width="3" stroke-linecap="round"/></svg><span class="vh-logo-t">Crestline<small>Motors &middot; Riverton</small></span></a>
+        <nav class="vh-nav" id="vh-nav">
+            <div class="vh-nav-top"><span class="vh-logo"><svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><rect x="1" y="1" width="46" height="46" rx="10" fill="currentColor"/><path d="M9 31 L19 17 L25 25 L29 20 L39 31" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M9 36 H39" stroke="#D62B2B" stroke-width="3" stroke-linecap="round"/></svg><span class="vh-logo-t">Crestline<small>Motors &middot; Riverton</small></span></span>
+                <button type="button" class="vh-nav-x" aria-label="Close" onclick="VehicleJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="vh-menu">
+                <li class="vh-mi"><div class="vh-mrow"><a class="vh-ml" href="New">New Inventory</a><button type="button" class="vh-mx" aria-label="Expand" onclick="VehicleJs.toggleSub(this)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button></div><div class="vh-mega"><div class="vh-mega-in"><div class="vh-mcol"><div class="vh-mtitle">Shop by make</div><ul><li><a href="New?make=arden">Arden</a></li><li><a href="New?make=kestrel">Kestrel</a></li><li><a href="New?make=voss">Voss</a></li><li><a href="New?make=halcyon">Halcyon</a></li><li><a href="New">All new vehicles</a></li></ul></div><div class="vh-mcol"><div class="vh-mtitle">Shop by body style</div><ul><li><a href="New?body=sedan">Sedan</a></li><li><a href="New?body=coupe">Coupe</a></li><li><a href="New?body=hatch">Hatchback</a></li><li><a href="New?body=crossover">Crossover</a></li><li><a href="New?body=suv">SUV</a></li><li><a href="New?body=truck">Truck</a></li></ul></div><a class="vh-mpromo" href="New"><img src="images/banners/new.webp" alt="" loading="lazy"><span class="vh-mpromo-t">New arrivals every week</span><span class="vh-mpromo-c">Browse new inventory &rarr;</span></a></div></div></li><li class="vh-mi"><div class="vh-mrow"><a class="vh-ml" href="PreOwned">Pre-Owned</a><button type="button" class="vh-mx" aria-label="Expand" onclick="VehicleJs.toggleSub(this)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button></div><div class="vh-mega"><div class="vh-mega-in"><div class="vh-mcol"><div class="vh-mtitle">Shop by body style</div><ul><li><a href="PreOwned?body=sedan">Sedan</a></li><li><a href="PreOwned?body=coupe">Coupe</a></li><li><a href="PreOwned?body=hatch">Hatchback</a></li><li><a href="PreOwned?body=crossover">Crossover</a></li><li><a href="PreOwned?body=suv">SUV</a></li><li><a href="PreOwned?body=truck">Truck</a></li></ul></div><div class="vh-mcol"><div class="vh-mtitle">Shop by price</div><ul><li><a href="PreOwned?price=u20">Under $20,000</a></li><li><a href="PreOwned?price=20-30">$20,000 to $30,000</a></li><li><a href="PreOwned?price=30-40">$30,000 to $40,000</a></li><li><a href="PreOwned?price=40">Over $40,000</a></li><li><a href="PreOwned?certified=1">Certified pre-owned</a></li></ul></div><a class="vh-mpromo" href="PreOwned?certified=1"><img src="images/banners/preowned.webp" alt="" loading="lazy"><span class="vh-mpromo-t">Certified with a 7-year warranty</span><span class="vh-mpromo-c">Shop certified &rarr;</span></a></div></div></li><li class="vh-mi"><div class="vh-mrow"><a class="vh-ml" href="Specials">Specials</a></div></li><li class="vh-mi"><div class="vh-mrow"><a class="vh-ml" href="Research">Research</a></div></li><li class="vh-mi"><div class="vh-mrow"><a class="vh-ml" href="Financing">Financing</a></div></li><li class="vh-mi"><div class="vh-mrow"><a class="vh-ml" href="Service">Service &amp; Parts</a><button type="button" class="vh-mx" aria-label="Expand" onclick="VehicleJs.toggleSub(this)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button></div><div class="vh-mega"><div class="vh-mega-in"><div class="vh-mcol"><div class="vh-mtitle">Service</div><ul><li><a href="Service#book">Schedule service</a></li><li><a href="Specials#service">Service specials</a></li><li><a href="Contact">Hours &amp; directions</a></li><li><a href="Login">My Garage</a></li></ul></div><div class="vh-mcol"><div class="vh-mtitle">Parts</div><ul><li><a href="Service#parts">Order parts</a></li><li><a href="Service?svc=rotation#book">Tires &amp; wheels</a></li><li><a href="Service?svc=battery#book">Batteries</a></li><li><a href="Service?svc=ev-check#book">EV battery check</a></li></ul></div><a class="vh-mpromo" href="Service#book"><img src="images/banners/service.webp" alt="" loading="lazy"><span class="vh-mpromo-t">Six bays, all makes and models</span><span class="vh-mpromo-c">Book in 60 seconds &rarr;</span></a></div></div></li><li class="vh-mi"><div class="vh-mrow"><a class="vh-ml" href="About">About Us</a></div></li>
+                <li class="vh-mi vh-mi-m"><div class="vh-mrow"><a class="vh-ml" href="Contact">Contact</a></div></li>
+                <li class="vh-mi vh-mi-m"><div class="vh-mrow"><a class="vh-ml" href="Login">Sign in &middot; My Garage</a></div></li>
+            </ul>
+            <a class="vh-btn vh-nav-cta" href="Service#book">Schedule service</a>
+        </nav>
+        <div class="vh-search" id="vh-search">
+            <span class="vh-search-ic"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="vh-q" placeholder="Search inventory" autocomplete="off" maxlength="40" oninput="VehicleJs.search(this.value)" onfocus="VehicleJs.search(this.value)" aria-label="Search">
+            <div class="vh-sugg" id="vh-sugg"></div>
+        </div>
+        <a class="vh-acct" href="Login" aria-label="Sign in"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.4 4.2-6.5 8-6.5s7 2.1 8 6.5"/></svg><span>Sign in</span></a>
+    </div>
+    <div class="vh-scrim" id="vh-scrim" onclick="VehicleJs.closeNav()"></div>
+</header>
+<main class="vh-main">
+    <div class="vh-wrap"><div class="vh-crumb"><a href="Home">Home</a><span>/</span>{plhd_crumb}</div></div>
+    {plhd_vstart}
+    <div class="vh-wrap">
+        <section class="vh-vd">
+            <div class="vh-vd-art">
+                <div class="vh-vd-img"><img src="{plhd_image}" alt="{plhd_alt}">{plhd_flag}</div>
+                <div class="vh-vd-quick">{plhd_quickspecs}</div>
+            </div>
+            <div class="vh-vd-b">
+                <div class="vh-eyebrow">{plhd_eyebrow}</div>
+                <h1>{plhd_title}</h1>
+                <div class="vh-vd-sub">{plhd_sub}</div>
+                <div class="vh-pbox">{plhd_pricebox}</div>
+                <div class="vh-vd-btns"><a class="vh-btn" href="#drive">Request a test drive</a><a class="vh-btn vh-btn-o" href="#payment">Estimate payment</a></div>
+                <ul class="vh-perks"><li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke-linecap="round"/></svg><span>{plhd_perk}</span></li><li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="8" cy="15" r="4.5"/><path d="M11.5 12L20 3.5M16 7.5l2.5 2.5M18.5 5l2 2"/></svg><span>Free 24-hour hold with any test drive request</span></li><li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg><span>One clear price &mdash; no haggling</span></li></ul>
+            </div>
+        </section>
+        <section class="vh-sec vh-two">
+            <div>
+                <div class="vh-sec-h"><div><div class="vh-eyebrow">Specifications</div><h2>The details</h2></div></div>
+                <table class="vh-specs">{plhd_specs}</table>
+            </div>
+            <div>
+                <div class="vh-sec-h"><div><div class="vh-eyebrow">Equipment</div><h2>Features</h2></div></div>
+                <ul class="vh-feats">{plhd_features}</ul>
+                {plhd_history}
+            </div>
+        </section>
+        <section class="vh-sec vh-plan" id="payment">
+            <div class="vh-calc">
+                <div class="vh-eyebrow">Payment estimator</div>
+                <h2>What would it cost a month?</h2>
+                <input type="hidden" id="vh-stock" value="{plhd_stock}">
+                <div class="vh-row2">
+                    <label>Down payment<input type="number" id="vh-down" min="0" step="500" value="{plhd_down}"></label>
+                    <label>Trade-in value<input type="number" id="vh-trade" min="0" step="500" value="0"></label>
+                </div>
+                <div class="vh-row2">
+                    <label>Term<select id="vh-term" class="vh-sel"><option value="36">36 months</option><option value="48">48 months</option><option value="60" selected>60 months</option><option value="72">72 months</option></select></label>
+                    <label>Credit<select id="vh-tier" class="vh-sel"><option value="excellent">Excellent (720+)</option><option value="good" selected>Good (680–719)</option><option value="fair">Fair (620–679)</option><option value="rebuilding">Rebuilding (below 620)</option></select></label>
+                </div>
+                <button type="button" class="vh-btn" onclick="VehicleJs.payment()">Calculate</button>
+            </div>
+            <div class="vh-quote" id="vh-pay">{plhd_pay}</div>
+        </section>
+        <section class="vh-sec vh-two vh-two-e">
+            <div class="vh-form" id="vh-tform">
+                <div class="vh-eyebrow">Trade-in estimate</div><h3>What&rsquo;s your car worth?</h3>
+                <div class="vh-row2">
+                    <label>Year<select id="vh-tyear" class="vh-sel"><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019" selected>2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option></select></label>
+                    <label>Body style<select id="vh-tbody" class="vh-sel"><option value="sedan" selected>Sedan</option><option value="coupe">Coupe</option><option value="hatch">Hatchback</option><option value="crossover">Crossover</option><option value="suv">SUV</option><option value="truck">Truck</option></select></label>
+                </div>
+                <div class="vh-row2">
+                    <label>Mileage<input type="number" id="vh-tmiles" min="0" max="400000" step="1000" value="60000"><em id="vh-e-tmiles"></em></label>
+                    <label>Condition<select id="vh-tcond" class="vh-sel"><option value="excellent">Excellent</option><option value="good" selected>Good</option><option value="fair">Fair</option><option value="rough">Rough</option></select></label>
+                </div>
+                <button type="button" class="vh-btn vh-btn-o" onclick="VehicleJs.trade()">Get estimate</button>
+                <div class="vh-tres" id="vh-tres"></div>
+            </div>
+            <div class="vh-form" id="drive">
+                <div class="vh-eyebrow">Test drive</div><h3>Drive it before you decide</h3>
+                <div class="vh-row2">
+                    <label>Day<select id="vh-ddate" class="vh-sel">{plhd_dates}</select><em id="vh-e-ddate"></em></label>
+                    <label>Time<select id="vh-dtime" class="vh-sel"><option value="09:00">9:00 am</option><option value="09:30">9:30 am</option><option value="10:00">10:00 am</option><option value="10:30">10:30 am</option><option value="11:00">11:00 am</option><option value="11:30">11:30 am</option><option value="12:00">12:00 pm</option><option value="12:30">12:30 pm</option><option value="13:00">1:00 pm</option><option value="13:30">1:30 pm</option><option value="14:00">2:00 pm</option><option value="14:30">2:30 pm</option><option value="15:00">3:00 pm</option><option value="15:30">3:30 pm</option><option value="16:00">4:00 pm</option><option value="16:30">4:30 pm</option><option value="17:00">5:00 pm</option><option value="17:30">5:30 pm</option><option value="18:00">6:00 pm</option><option value="18:30">6:30 pm</option></select><em id="vh-e-dtime"></em></label>
+                </div>
+                <div class="vh-row2">
+                    <label>Name<input type="text" id="vh-name" maxlength="60" autocomplete="off"><em id="vh-e-name"></em></label>
+                    <label>Phone<input type="tel" id="vh-phone" maxlength="20" autocomplete="off" placeholder="555 017 1234"><em id="vh-e-phone"></em></label>
+                </div>
+                <label>Email<input type="email" id="vh-email" maxlength="80" autocomplete="off"><em id="vh-e-email"></em></label>
+                <label class="vh-check"><input type="checkbox" id="vh-dtrade"><span>I&rsquo;m bringing a trade-in for appraisal</span></label>
+                <button type="button" class="vh-btn" onclick="VehicleJs.testDrive()">Request test drive</button>
+                <div class="vh-sent" id="vh-sent"></div>
+            </div>
+        </section>
+        <section class="vh-sec">
+            <div class="vh-sec-h"><div><div class="vh-eyebrow">You might also like</div><h2>Similar vehicles</h2></div><a href="{plhd_morehref}">See more &rarr;</a></div>
+            <div class="vh-cars vh-cars-3">{plhd_similar}</div>
+        </section>
+    </div>
+    {plhd_vend}
+</main>
+<section class="vh-band">
+    <img src="images/banners/service.webp" alt="" loading="lazy">
+    <div class="vh-band-in">
+        <div class="vh-eyebrow">Service &amp; Parts</div>
+        <h3>Book service in 60 seconds.</h3>
+        <p>Pick your services, see the price and choose a time that fits. Six bays, every make and model.</p>
+        <div class="vh-band-btns"><a class="vh-btn" href="Service#book">Schedule service</a><a class="vh-btn vh-btn-g" href="New">Shop new</a></div>
+    </div>
+</section>
+<footer class="vh-foot">
+    <div class="vh-foot-in">
+        <div class="vh-fbrand">
+            <a class="vh-logo vh-logo-l" href="Home"><svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><rect x="1" y="1" width="46" height="46" rx="10" fill="currentColor"/><path d="M9 31 L19 17 L25 25 L29 20 L39 31" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M9 36 H39" stroke="#D62B2B" stroke-width="3" stroke-linecap="round"/></svg><span class="vh-logo-t">Crestline<small>Motors &middot; Riverton</small></span></a>
+            <p>Drive home happy. Price drops, new arrivals and service specials, about twice a month.</p>
+            <div class="vh-nl-f"><input type="email" id="vh-nl-email" placeholder="Your email" maxlength="80" autocomplete="off" aria-label="Email"><button type="button" onclick="VehicleJs.subscribe()">Subscribe</button></div>
+            <div class="vh-nl-msg" id="vh-nl-msg"></div>
+        </div>
+        <div class="vh-fcol"><div class="vh-ftitle">Shop</div><ul><li><a href="New">New inventory</a></li><li><a href="PreOwned">Pre-owned</a></li><li><a href="PreOwned?certified=1">Certified pre-owned</a></li><li><a href="Specials">Specials</a></li><li><a href="Research">Research models</a></li></ul></div><div class="vh-fcol"><div class="vh-ftitle">Own</div><ul><li><a href="Financing">Financing</a></li><li><a href="Financing#prequal">Get pre-qualified</a></li><li><a href="Service#book">Schedule service</a></li><li><a href="Service#parts">Order parts</a></li><li><a href="Login">My Garage</a></li></ul></div>
+        <div class="vh-fcol"><div class="vh-ftitle">Visit</div><p class="vh-faddr">4800 Crestline Parkway, Riverton<br>Sales (555) 017-4400<br>Service (555) 017-4410</p><ul><li><a href="About">About us</a></li><li><a href="Contact">Contact</a></li><li><a href="Contact">Hours &amp; directions</a></li></ul></div>
+    </div>
+    <div class="vh-disc">Crestline Motors and the Arden, Kestrel, Voss and Halcyon brands are fictional, made for a website template. Vehicles, prices, offers and rates are illustrative &mdash; nothing is reserved, financed or charged.</div>
+    <div class="vh-foot-bar">
+        <span>&copy; 2026 Crestline Motors (fictional). All rights reserved.</span>
+        <span class="vh-social"><a href="#" aria-label="Photos"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a><a href="#" aria-label="Videos"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a><a href="Contact" aria-label="Contact"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></a></span>
+        <span class="vh-built">Built with <a href="https://www.theskylite.com" target="_blank" rel="noopener">SkyNet</a></span>
+    </div>
+</footer>
+<div class="vh-modal" id="vh-modal" onclick="VehicleJs.closeModal(event)"><div class="vh-modal-box" id="vh-modal-box"></div></div>
+<div class="vh-toast" id="vh-toast" role="status"></div>
+</div>
