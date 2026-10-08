@@ -172,7 +172,7 @@ namespace CarDealer.codes
         public async Task<ApiResponse> Parts()
         {
             ApiResponse response = new ApiResponse();
-            await Task.CompletedTask;
+            
             string name = (GetDataValue("name") ?? string.Empty).Trim();
             string email = (GetDataValue("email") ?? string.Empty).Trim();
             string vehicle = (GetDataValue("vehicle") ?? string.Empty).Trim();
@@ -459,7 +459,7 @@ namespace CarDealer.codes
         public async Task<ApiResponse> Subscribe()
         {
             ApiResponse response = new ApiResponse();
-            await Task.CompletedTask;
+            
             string email = (GetDataValue("email") ?? string.Empty).Trim();
             if (!IsEmail(email))
             {

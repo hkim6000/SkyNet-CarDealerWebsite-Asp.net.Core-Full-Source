@@ -17,7 +17,7 @@ namespace CarDealer.codes
             SiteData site = await LoadSite();
             DateTime today = DateTime.Today;
             HtmlDoc.HtmlBodyText = HtmlDoc.HtmlBodyText.Replace("{plhd_open}", StripStatus(site, DateTime.Now));
-            await Task.CompletedTask;
+            
         }
 
         private const string DemoEmail = "demo@crestline.example";
@@ -51,7 +51,7 @@ namespace CarDealer.codes
         public async Task<ApiResponse> CreateAccount()
         {
             ApiResponse response = new ApiResponse();
-            await Task.CompletedTask;
+            
             string first = (GetDataValue("first") ?? string.Empty).Trim();
             string last = (GetDataValue("last") ?? string.Empty).Trim();
             string email = (GetDataValue("email") ?? string.Empty).Trim();
@@ -83,7 +83,7 @@ namespace CarDealer.codes
         public async Task<ApiResponse> Reset()
         {
             ApiResponse response = new ApiResponse();
-            await Task.CompletedTask;
+            
             string email = (GetDataValue("email") ?? string.Empty).Trim();
             if (!IsEmail(email))
             {
@@ -191,7 +191,7 @@ namespace CarDealer.codes
         public async Task<ApiResponse> Subscribe()
         {
             ApiResponse response = new ApiResponse();
-            await Task.CompletedTask;
+            
             string email = (GetDataValue("email") ?? string.Empty).Trim();
             if (!IsEmail(email))
             {
